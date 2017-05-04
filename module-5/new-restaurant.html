@@ -11,18 +11,19 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-  <?php
-$randNumber = mt_rand(1,2);
-if ( $randNumber == 1 )
-{
-    include 'menu-categories.html';
-}
-else
-{
-    include 'single-category.html';
-}
+  <script>
+ var JSFiles = ['1.js','2.js']; // put all the possible JS files to load.
+ function randomJS() {
+     // pick a random file from the list in JSFiles
+     var index = Math.floor(Math.random()*JSFiles.length); 
 
-
+     // Append JS file to head section.
+     var script = document.createElement('script');
+     script.src = JSFiles[index];
+     document.getElementsByTagName('head')[0].appendChild(script);
+ };
+</script>
+<body onload="randomJS();">
 <link rel="stylesheet" href="css restaurant.css">
 
 

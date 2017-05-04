@@ -11,20 +11,7 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-  <?php
-$randNumber = mt_rand(1,2);
-if ( $randNumber == 1 )
-{
-    include 'menu-categories.html';
-}
-else
-{
-    include 'single-category.html';
-}
-
-
 <link rel="stylesheet" href="css restaurant.css">
-
 
 </head>
 
@@ -61,7 +48,7 @@ else
               <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
           </li>
           <li>
-            <a href="single-category.html">
+            <a href="#">
               <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
             <li>
@@ -100,7 +87,7 @@ else
         <a href="menu-categories.html" onclick="$dc.loadMenuItems({{randomCategoryShortName}});"><div id="menu-tile"><span>menu</span></div></a>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html" onclick="$dc.loadMenuItems('SP');">
+        <a href="specials-categories.html" onclick="$dc.loadMenuItems('SP');">
           <div id="specials-tile"><span>specials</span></div>
         </a>
       </div>
