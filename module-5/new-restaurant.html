@@ -14,6 +14,14 @@
   <script type="ajax-utils.js"></script>
 
   <script>
+  if (Math.random() < 0.5) {
+    text= "http://davids-restaurant.herokuapp.com/categories/81.json"
+  } else if(Math.random() < 0.5) {
+    text="http://davids-restaurant.herokuapp.com/categories/82.json"
+    else {
+      text="http://davids-restaurant.herokuapp.com/categories/83.json"
+    }
+    document.getElementByID("demo").innerhtml = text;
  
 </script>
 
