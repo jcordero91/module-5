@@ -14,14 +14,7 @@
   <script type="ajax-utils.js"></script>
 
   <script>
-  if (Math.random() < 0.5) {
-    text= "http://davids-restaurant.herokuapp.com/categories/81.json"
-  } else if(Math.random() < 0.5) {
-    text="http://davids-restaurant.herokuapp.com/categories/82.json"
-    else {
-      text="http://davids-restaurant.herokuapp.com/categories/83.json"
-    }
-    document.getElementByID("demo").innerhtml = text;
+  
  
 </script>
 
@@ -73,7 +66,17 @@
             <li id="phone" class="hidden-xs">
               <a href="tel:410-602-5008">
 
+
                 <span>410-602-5008</span></a><div> * We Deliver</div>
+
+                <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+               <div id="myDropdown" class="dropdown-content">
+                <a href="#">Menu</a>
+                <a href="#">Specials</a>
+                <a href="#contact"></a>
+               </div>
+               </div>
           </li>
         </ul><!-- #nav-list -->
      </div><!-- .collapse .navbar-collapse -->
