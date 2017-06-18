@@ -65,6 +65,7 @@ h1 {
 #nav-list a {
 	color: #951C49;
 	text-align: center;
+  display: inline;
 }
 
 #nav-list a: hover {
